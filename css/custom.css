@@ -1,0 +1,153 @@
+body { background-color: #673ab7; }
+
+h1,h2,h3,h4,h5,h6,a,p {
+/*    font-family: "Roboto","Arial",sans-serif;*/
+/*    font-weight: 400;*/
+    color: #333;
+    line-height: 1em;
+    margin: 8px 0;
+    padding: 0;
+    letter-spacing: 0
+}
+
+h1 {
+    font-size: 3.42857em;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 2.571429em;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+h4 {
+    font-size: 1.428571em;
+    font-weight: 200;
+}
+
+h5 {
+    font-size: 1.285714em;
+    font-weight: 400;
+    line-height: 1.12em
+}
+
+h6 {
+    font-size: 1.14285em;
+    font-weight: 400;
+    line-height: 1.12em
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.571428571em
+}
+
+a {
+    font-size: 1em;
+    line-height: 1.571428571em;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.less-padding { padding: 5px; }
+.medium-padding { padding: 10px; }
+.large-padding { padding: 15px; }
+
+.less-padding-top { padding-top: 5px; }
+.medium-padding-top { padding-top: 10px; }
+.large-padding-top { padding-top: 15px; }
+
+.less-margin { margin: 5px; }
+.medium-margin { margin: 10px; }
+.large-margin { margin: 15px; }
+
+.less-margin-top { margin-top: 5px; }
+.medium-margin-top { margin-top: 10px; }
+.large-margin-top { margin-top: 15px; }
+
+
+
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
+}
+.vertical-align-center {
+    display: table-cell;
+    pointer-events: none;
+    vertical-align: middle;
+    /* To center vertically */
+}
+.modal-content {
+    max-width: 550px;
+    height: inherit;
+    margin: 0 auto;
+    pointer-events: all;
+    width: inherit;
+    border-radius: 3px;
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    /* To center horizontally */
+}
+
+.modal-body{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.bottom-border-input{
+    height:25px;padding:0;
+    border-bottom: solid rgba(0,0,0,.12) 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, .0);
+}
+.bottom-border-input:focus{
+    border-bottom: solid #673AB7 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, .0);
+    -webkit-transition: width .5s ease;
+   -moz-transition: width .5s ease;
+   transition: width .5s ease;
+}
+
+.header-description{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1em;
+}
+
+.modal-footer { background-color: #23143E; }
+
+.white-color { color: white; }
+
+.white-color a:hover,a:focus { color: white; }
+
+.black-color { color: black; }
+
+.black-color a:hover,a:focus { color: black; }
+
+.login-logo { max-height: 60px; max-width: auto; }
+
+.login-form { padding: 0 20px 20px 20px; }
+
+.custom-label { color: rgba(0,0,0,0.5); font-family: 'Roboto'; font-size: 12px; }
+
+.login-button { background-color: #673ab7; border-radius: 2px; color: white; }
+.login-button:hover { background-color: #7051a9; color: white; }
+
+.login-facebook-button { background-color: #3b5998; border-radius: 2px; color: white; }
+.login-facebook-button:hover { background-color: #4060a5; color: white; }

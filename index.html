@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Venue Pro</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href='css/custom.css' rel='stylesheet' type='text/css'>
+</head>
+    
+    
+<body>
+
+<div class="container"><!-- Container Start -->
+
+<!-- Login Modal Start -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" data-backdrop="static" data-keyboard="false">
+    <div class="vertical-alignment-helper">
+<div class="modal-dialog vertical-align-center" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+        <div class="text-center large-margin">
+            <img src="images/logo.svg" class="login-logo img-responsive center-block">
+            <h2 class="less-margin">Login</h2>
+        </div>
+        <form class="login-form" data-toggle="validator" role="form">
+            <div class="form-group">
+                <label class="custom-label" for="email">Email</label>
+                <input type="email" class="form-control bottom-border-input" id="email" required="required">
+            </div>
+            <div class="form-group">
+                <label class="custom-label" for="password">Password</label>
+                <input type="password" class="form-control bottom-border-input" id="password" data-minlength="6" required="required">
+                <!-- <div class="help-block">Minimum of 6 characters</div> -->
+            </div>
+            <div class="large-margin-top">
+                <button type="submit" class="btn btn-lg btn-block login-button">Login</button>
+            <div class="text-center custom-label less-padding ">-OR-</div>
+            <button type="submit" class="btn btn-lg btn-block login-facebook-button">Login with Facebook</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="modal-footer white-color">
+        <span class="pull-left small">Forget <a class="white-color" data-dismiss="modal" data-toggle="modal" href="#forgetPasswordModal" ><u><strong>Password?</strong></u></a></span>
+        <span class="pull-right small">Don't have an account? <a class="white-color" data-dismiss="modal" data-toggle="modal" href="#signUpModal" ><u><strong>Get started for FREE</strong></u></a></span>
+
+    </div>
+    </div>
+</div>
+</div>
+</div><!-- Login Modal End -->
+    
+    <!-- Forget Password Modal Start -->
+     <div class="modal fade" id="forgetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgetPasswordModalLabel" data-backdrop="static" data-keyboard="false">
+    <div class="vertical-alignment-helper">
+<div class="modal-dialog vertical-align-center" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+        <div class="text-center large-margin">
+            <img src="images/logo.svg" class="login-logo img-responsive center-block">
+            <h2 class="less-margin">Forgot Password</h2>
+        </div>
+        <form class="login-form" data-toggle="validator" role="form">
+            <div class="form-group">
+                <label class="custom-label" for="email">Email</label>
+                <input type="email" class="form-control bottom-border-input" id="email" required="required">
+            </div>
+           
+            <div class="large-margin-top">
+             <button type="submit" class="btn btn-lg btn-block login-button">Request Reset Link</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="modal-footer white-color">
+        <span class="pull-left small">Already have an account? <a class="white-color" data-dismiss="modal" data-toggle="modal" href="#loginModal" ><u><strong>Login</strong></u></a></span>
+        <span class="pull-right small">Don't have an account? <a class="white-color" data-dismiss="modal" data-toggle="modal" href="#signUpModal" ><u><strong>Get started for FREE</strong></u></a></span>
+
+    </div>
+    </div>
+</div>
+</div>
+</div><!-- Forget Password Modal End -->
+    
+    
+    
+    <!-- SignUp Modal Start -->
+     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" data-backdrop="static" data-keyboard="false">
+    <div class="vertical-alignment-helper">
+<div class="modal-dialog vertical-align-center" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+        <div class="text-center large-margin">
+            <img src="images/logo.svg" class="login-logo img-responsive center-block">
+            <h2 class="large-margin">Get started for FREE</h2>
+            <h4>No Credit Card Needed</h3>
+            <div class="header-description">
+             <span> You have decided to get more customers, and safe time and money on the way. Give us a few more details, so we can get you started.
+            </span>
+            </div>
+        </div>
+        <form class="login-form" data-toggle="validator" role="form">
+            <div class="form-group">
+                <label class="custom-label" for="name">Your Name</label>
+                <input type="text" class="form-control bottom-border-input" id="name" required="required">
+            </div>
+            
+            <div class="form-group">
+                <label class="custom-label" for="email">Your Email</label>
+                <input type="email" class="form-control bottom-border-input" id="email" required="required">
+            </div>
+            
+            <div class="form-group">
+                <label class="custom-label" for="email">Create Password</label>
+                <input type="password" class="form-control bottom-border-input" id="password" required="required">
+            </div>
+           
+            <div class="large-margin-top">
+             <button type="submit" class="btn btn-lg btn-block login-button">Sign Up for Free</button>
+            </div>
+            
+            <div class="text-center small medium-margin-top ">By clickign on "Sign up for free", I agree to DOORBOOST' <a class="black-color"   href="#" ><strong>Privacy Policy </strong></a>and <a class="black-color"   href="#" ><strong>Terms of Service</strong></a></div>
+        </form>
+    </div>
+    <div class="modal-footer white-color ">
+        <span class="small">Already have an account? <a class="white-color" data-dismiss="modal" data-toggle="modal" href="#loginModal" ><u><strong>Login</strong></u></a></span>
+    </div>
+    </div>
+</div>
+</div>
+</div><!-- SignUp Modal End -->
+
+</div><!-- Container End -->
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+        $(window).load(function(){
+$('#loginModal').modal('show');
+});
+    </script>
+</body>
+</html>
